@@ -1,17 +1,21 @@
 def checkCorrectness(arr):
-    row=set()
     column=set()
     for i in range(len(arr)):
+        row=set()
         for j in range(len(arr[i])):
             if arr[i][j]>0 and arr[i][j]<10:
                 row.add(arr[i][j])
         for j in range(len(arr[i])):
             if arr[i][j]>0 and arr[i][j]<10:
-                column.add(arr[j][i])        
-    for i in range(1,10):
-        if i not in (row or column):
-            return False
-    return True    
+                column.add(arr[j][i])
+        for z in range(1,10):
+            if z not in row:
+                return False
+
+    for z in range(1,10):
+            if z not in column:
+                return False
+    return True       
 
 arr=[ [ 5, 1, 3, 6, 8, 7, 2, 4, 9 ], 
       [ 8, 4, 9, 5, 2, 1, 6, 3, 7 ],

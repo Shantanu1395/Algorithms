@@ -1,3 +1,11 @@
+# P     M  
+#  R   A
+#   O R
+#    G
+#   O  R
+#  R   A
+#P       M
+
 def printPattern(s):
     l=[]
     for i in range(len(s)//2):

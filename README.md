@@ -1,2 +1,2 @@
 # Algorithms
-Contains unsorted algorithms and programs
+Contains Algorithms and DataStuctures in Java,Python and C++

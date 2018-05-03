@@ -1,3 +1,8 @@
+#Properties-
+#    Stable(Ordering Same)
+#    Not inplace(Extra memory Required)   
+#    T(n)=2T(n/2)+n ie nlogn
+
 def merge(arr,l,m,r):
     left=arr[l:m+1]
     right=arr[m+1:r+1]

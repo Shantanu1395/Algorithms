@@ -1,3 +1,9 @@
+#Features-
+#1.Inplace
+#2.Not stable
+#3.T(n)=2T(n/2)+O(n)   O(nlog(n))
+#Worst-case  O(n^2)
+
 def partition(arr,low,high):
     pivot=arr[high]
     i=low

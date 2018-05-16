@@ -25,9 +25,9 @@ def length(head):
 #Assuming even come first and then odd
 def repositionOddEven(head):
     curr=head
-    previous=None
+    previous=head
     while curr!=None:
-        if curr.data%2==0:
+        if curr.data%2==0 and not curr == head:
             store=curr
             previous.next=curr.next
             curr.next=head

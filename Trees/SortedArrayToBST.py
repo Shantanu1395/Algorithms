@@ -1,4 +1,11 @@
-class Node(object):
+# Final Tree
+#           3
+#          / \
+#         1   4
+#        / \    
+#       2   5   
+           
+class Node():
 
     def __init__(self,data):
         self.data=data
@@ -11,19 +18,16 @@ class Tree():
         self.root=None
 
 def arraytoBST(arr,low,high):
-
-    if low>high:
+    if low<=high:
+        mid=(low+high)//2 
+        root=Node(arr[mid])  #Previously Mistaken
+        l=arraytoBST(arr,low,mid-1)
+        r=arraytoBST(arr,mid+1,high)
+        root.left=l
+        root.right=r
+        return root
+    else:
         return None
-
-    mid=(low+high)//2
-    temp=Node(arr[low])
-
-    a=arraytoBST(arr,low,mid-1)
-    b=arraytoBST(arr,mid+1,high)
-    temp.left=a
-    temp.right=b
-    return temp 
-
 
 class Queue:
 

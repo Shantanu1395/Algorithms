@@ -1,3 +1,13 @@
+# Tree
+#           3
+#          / \
+#         6   8
+#        / \    \
+#       2   11   13
+#           / \  /
+#          9   5 7
+
+
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -40,6 +50,10 @@ tree.root.left.right.right=Node(5)
 tree.root.right.right.left=Node(7)
 
 print(LCA(tree.root,2,5))
+#Output - 6
 print(LCA(tree.root,2,8))
+#Output - 3
 print(LCA(tree.root,9,5))
+#Output - 11
 print(LCA(tree.root,9,3))
+#Output - 3

@@ -1,9 +1,3 @@
-#            9
-#           / \
-#          6   15
-#         /     \
-#        3       21
-
 class Queue:
 
     def __init__(self):
@@ -70,7 +64,19 @@ tree.root.left.left=Node(3)
 tree.root.right=Node(15)
 tree.root.right.right=Node(21)
 
+#            9
+#           / \
+#          6   15
+#         /     \
+#        3       21
 levelOrder(tree.root)
 print()
+
 addSmallerElementsToEachNode(tree.root)
+
+#            18
+#           / \
+#          9   33
+#         /     \
+#        3       54
 levelOrder(tree.root)

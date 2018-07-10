@@ -7,17 +7,13 @@
 def partition(arr,low,high):
     pivot=arr[high]
     i=low
+
     for j in range(low,high):
         if arr[j]<=pivot:
-            temp=arr[i]
-            arr[i]=arr[j]
-            arr[j]=temp
-            i=i+1
+            arr[i],arr[j] = arr[j],arr[i]
+            i=i+1            
             
-            
-    temp=arr[high]
-    arr[high]=arr[i]
-    arr[i]=temp
+    arr[high], arr[i] = arr[i],arr[high] 
     
     return i
 

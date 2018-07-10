@@ -1,3 +1,13 @@
+#               10
+#              /  \
+#            -10   19
+#            / \   /
+#          -20  0 17
+#
+#
+#
+#
+
 class Node(object):
 
     def __init__(self,data):

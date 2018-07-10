@@ -1,3 +1,16 @@
+"""
+Given an array arr[0 … n-1] containing n positive integers, a subsequence of arr[] is called Bitonic if it is first increasing, then decreasing.
+Write a function that takes an array as argument and returns the length of the longest bitonic subsequence.
+
+Input arr[] = {1, 11, 2, 10, 4, 5, 2, 1};
+Output: 6 (A Longest Bitonic Subsequence of length 6 is 1, 2, 10, 4, 2, 1)
+
+Input arr[] = {12, 11, 40, 5, 3, 1}
+Output: 5 (A Longest Bitonic Subsequence of length 5 is 12, 11, 5, 3, 1)
+
+
+"""
+
 #s=list(map(int,input().strip().split(" ")))
 s=[2,-1,4,3,5,-1,3,2]
 #s=[1,11,2,10,4,5,2,1]

@@ -1,3 +1,11 @@
+#Tree
+#      10                      10 
+#     /  \                    /  \
+#    5    6                  5    6
+#        / \                     / \ 
+#       8   7                   8   7 
+#            \                       \
+#             4                       4
 class Node(object):
 
     def __init__(self,data):
@@ -27,7 +35,6 @@ tree1.root.right=Node(6)
 tree1.root.right.left=Node(8)
 tree1.root.right.right=Node(7)
 tree1.root.right.right.right=Node(4)
-
 
 tree2=Tree()
 tree2.root=Node(10)
